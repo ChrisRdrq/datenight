@@ -1,2 +1,5 @@
-class DatesController < ApplicationController
-end
+class DatePostsController < ApplicationController
+
+  def index
+		@dates = DatePost.all
+	end
