@@ -55,7 +55,7 @@ before_filter :authenticate_user!, :except => [:index, :show]
     @date = DatePost.find(params[:id])
 
     @date.destroy
-    redirect_to dates_path
+    redirect_to date_posts_path
   end
 
   private
