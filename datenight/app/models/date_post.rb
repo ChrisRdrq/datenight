@@ -1,0 +1,2 @@
+class DatePost < ApplicationRecord
+end
