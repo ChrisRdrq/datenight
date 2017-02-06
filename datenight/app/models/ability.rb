@@ -5,9 +5,9 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
        user ||= User.new # guest user (not logged in)
-        can :read, :post
+        can :read, Post
 
-        can [:create, :update, :destroy], post do |post|
+        can [:create, :update, :destroy], Post do |post|
           post.user == user
 
        end
