@@ -1,28 +1,15 @@
 <h1>Your Dates</h1>
-
 <table>
-
-  <h4>Date: </h4>
-
-  <h4>Food:</h4>
-
-<h4>Activity 1:</h4>
-
-  <h4>Activity 2 </h4>
-
-  <h4>Location: </h4>
-
-<% @dates.each do |date| %>
-
+    <% @dates.each do |date| %>
+    <h4>Date: </h4>
       <tr><%= date.title %></tr>
-
+    <h4>Activity 1:</h4>
       <tr><%= date.act1 %></tr>
-
+    <h4>Food:</h4>
       <tr><%= date.food %></tr>
-
+    <h4>Activity 2 </h4>
       <tr><%= date.act2 %></tr>
-
+    <h4>Location: </h4>
       <tr><%= date.location %></tr>
-
   <% end %>
 </table>
