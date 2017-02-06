@@ -50,6 +50,6 @@ class DatePostsController < ApplicationController
 
   private
   def date_params
-    params.require(:title).permit(date_params)
+    params.require(:date_posts).permit(:title, :act1, :act2, :food, :location)
   end
 end
