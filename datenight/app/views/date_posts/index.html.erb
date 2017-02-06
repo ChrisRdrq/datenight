@@ -1,2 +1,16 @@
+<table>
+
 <% @dates.each do |date| %>
-		<p> <% = date.title %></p>
+    <h4>Date: </h4>
+      <tr><%= date.title %></tr>
+    <h4>Activity 1:</h4>
+      <tr><%= date.act1 %></tr>
+    <h4>Food:</h4>
+      <tr><%= date.food %></tr>
+    <h4>Activity 2 </h4>
+      <tr><%= date.act2 %></tr>
+    <h4>Location: </h4>
+      <tr><%= date.location %></tr>
+
+  <% end %>
+</table>
