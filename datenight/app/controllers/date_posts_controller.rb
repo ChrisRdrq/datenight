@@ -20,10 +20,11 @@ class DatePostsController < ApplicationController
     else
       render 'new'
     end
+  end
 
-    private
+  private
     	def datepost_perams
 
     		params.require(:date).permit(datepost_params)
-    end
+  end
 end
