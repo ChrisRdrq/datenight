@@ -1,0 +1,23 @@
+<h1>Your Dates</h1>
+<table>
+    <% @dates.each do |date| %>
+    <h4>Date: </h4>
+      <tr><%= date.title %></tr>
+    <h4>Activity 1:</h4>
+      <tr><%= date.act1 %></tr>
+    <h4>Food:</h4>
+      <tr><%= date.food %></tr>
+    <h4>Activity 2 </h4>
+      <tr><%= date.act2 %></tr>
+    <h4>Location: </h4>
+      <tr><%= date.location %></tr>
+    <tr>
+    <%= link_to 'Show', date_post_path(date) %>
+    <%= link_to 'Edit', edit_date_post_path(date) %>
+    <%= link_to 'Destroy', date_post_path(date),
+                  method: :delete,
+                  data: { confirm: 'Are you sure?'} %>
+    </tr>
+
+  <% end %>
+</table>
