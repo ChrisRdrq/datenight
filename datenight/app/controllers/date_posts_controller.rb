@@ -13,9 +13,10 @@ class DatePostsController < ApplicationController
   def new
 		@date = DatePost.new
 	end
+
   # create
   def create
-    @date = DatePost.new(datepost_params)
+    @date = DatePost.new(date_params)
 
     if @date.save
       redirect_to @date
@@ -28,21 +29,27 @@ class DatePostsController < ApplicationController
   def edit
     @date = DatePost.find(params[:id])
   end
+
   # update
   def update
     @date = DatePost.find(params[:id])
 
-    if @date.update(datepost_params)
+    if @date.update(date_params)
       redirect_to @date
     else
       render 'edit'
     end
   end
+  # destroy
+  def destroy
+    @date = DatePost.find(params[:id])
 
+    @date.destroy
+    redirect_to dates_path
+  end
 
   private
-    	def datepost_perams
-
-    		params.require(:date).permit(datepost_params)
+  def date_params
+    params.require(:title).permit(date_params)
   end
 end
