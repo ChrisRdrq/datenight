@@ -1,4 +1,9 @@
 <h1>Your Dates</h1>
+
+<%= link_to 'Create', new_date_post_path(@date) %>
+
+
+
 <table>
     <% @dates.each do |date| %>
     <h4>Date: </h4>

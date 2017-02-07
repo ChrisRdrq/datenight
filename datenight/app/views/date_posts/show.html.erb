@@ -12,3 +12,5 @@
   <strong>Location:</strong>
     <%= @date.location %><br>
 </p>
+  <%= link_to 'Edit', edit_date_post_path(@date) %>
+  <%= link_to 'Go to Dates', date_posts_path(@date) %>
