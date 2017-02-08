@@ -1,28 +1,30 @@
+
+<div class="formContainer">
 	<%= form_for @date do |f| %>
 
-	<p>
-		<%= f.label :Title %><br>
-		<%= f.text_field :title %><br>
-	</p>
-	<p>
-		<%= f.label :Activity1 %><br>
-		<%= f.text_field :act1 %><br>
-	</p>
-  <p>
-    <%= f.label :Food %><br>
-    <%= f.text_field :food %><br>
-  </p>
-  <p>
-    <%= f.label :Activity2 %><br>
-    <%= f.text_field :act2 %><br>
-  </p>
-  <p>
-    <%= f.label :Location %><br>
-    <%= f.text_field :location %><br>
-  </p>
+		<div class="heading">
+			<%= f.label :Title %><br>
+			<%= f.text_field :title %><br>
+		</div>
+		<div class="heading">
+			<%= f.label :Activity1 %><br>
+			<%= f.text_field :act1 %><br>
+		</div>
+	  <div class="heading">
+	    <%= f.label :Food %><br>
+	    <%= f.text_field :food %><br>
+	  </div>
+	  <div class="heading">
+	    <%= f.label :Activity2 %><br>
+	    <%= f.text_field :act2 %><br>
+	  </div>
+	  <div class="heading">
+	    <%= f.label :Location %><br>
+	    <%= f.text_field :location %><br>
+	  </div>
 
-  <p>
-    <%=f.submit %>
-  </p>
-
-<% end %>
+	  <div class="heading">
+	    <%=f.submit %>
+	  </div>
+	<% end %>
+</div>

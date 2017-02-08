@@ -1,8 +1,9 @@
 <h1>THE Date</h1>
 
-<p>
+<div class="heading">
   <strong>Title:</strong>
     <%= @date.title %><br>
+
   <strong>Activity 1:</strong>
     <%= @date.act1 %><br>
   <strong>Food:</strong>
@@ -11,6 +12,6 @@
     <%= @date.act2 %><br>
   <strong>Location:</strong>
     <%= @date.location %><br>
-</p>
+</div>
   <%= link_to 'Edit', edit_date_post_path(@date) %>
   <%= link_to 'Go to Dates', date_posts_path(@date) %>
