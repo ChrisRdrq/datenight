@@ -2,11 +2,6 @@
 
 <!-- Most recent date div -->
 
-
-
-
-
-
 <div>
 <ul>
   <li><%= link_to 'Create', new_date_post_path(@date), :class => "btn btn-default btn-lg" %></li>
@@ -14,9 +9,8 @@
 </div>
 <hr>
 <!-- From here down is lower div -->
-
-    <div class="custom_container">
-      <div class="row">
+    <div class="container">
+      <!-- <div class="row"> -->
         <% @dates.each do |date| %>
 
                <div class="custom_card">
@@ -43,7 +37,7 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            <!-- </div>
+          </div> -->
       <% end %>
 </div>
