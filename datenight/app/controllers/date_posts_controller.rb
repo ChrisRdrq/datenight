@@ -6,6 +6,7 @@ before_filter :authenticate_user!
   def index
     @user = current_user
     @dates = @user.date_posts.all
+    @dates = DatePost.all.limit(4).order("created_at desc")
 	end
 
   # show
