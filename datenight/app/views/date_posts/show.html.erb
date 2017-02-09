@@ -1,9 +1,8 @@
 <h1>THE Date</h1>
-
+<!-- <div class="formContainer">
 <div class="heading">
   <strong>Title:</strong>
     <%= @date.title %><br>
-
   <strong>Activity 1:</strong>
     <%= @date.act1 %><br>
   <strong>Food:</strong>
@@ -13,5 +12,35 @@
   <strong>Location:</strong>
     <%= @date.location %><br>
 </div>
+</div> -->
+<div class="formContainer">
+	<%= form_for @date do |f| %>
+
+		<div class="heading">
+			<%= f.label :Title %><br>
+			<%= @date.title %><br>
+		</div>
+		<div class="heading">
+			<%= f.label :Activity1 %><br>
+			<%= @date.act1 %><br>
+		</div>
+	  <div class="heading">
+	    <%= f.label :Food %><br>
+	    <%= @date.food %><br>
+	  </div>
+	  <div class="heading">
+	    <%= f.label :Activity2 %><br>
+	    <%= @date.act2 %><br>
+
+	  </div>
+	  <div class="heading">
+	    <%= f.label :Location %><br>
+	    <%= @date.location %><br>
+	  </div>
+
+
+	<% end %>
+
+
   <%= link_to 'Edit', edit_date_post_path(@date) %>
   <%= link_to 'Go to Dates', date_posts_path(@date) %>
