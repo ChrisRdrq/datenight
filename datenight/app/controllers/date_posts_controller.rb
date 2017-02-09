@@ -1,17 +1,19 @@
 class DatePostsController < ApplicationController
 
-before_filter :authenticate_user!, :except => [:index, :show]
+before_filter :authenticate_user!
 
   # index
   def index
     @user = current_user
-		@dates = DatePost.all
+    @dates = @user.date_posts.all
+    @dates = DatePost.all.limit(4).order("created_at desc")
 	end
 
   # show
   def show
    @user = current_user
    @date = DatePost.find(params[:id])
+
 	end
 
   # new
@@ -23,7 +25,8 @@ before_filter :authenticate_user!, :except => [:index, :show]
   # create
   def create
     @user = current_user
-    @date = DatePost.new(date_params)
+    @date = @user.date_posts.build(date_params)
+    # @date = DatePost.new(date_params)
 
     if @date.save
       redirect_to @date
@@ -60,6 +63,6 @@ before_filter :authenticate_user!, :except => [:index, :show]
 
   private
   def date_params
-    params.require(:date_post).permit(:title, :act1, :act2, :food, :location)
+    params.require(:date_post).permit(:title, :act1, :act2, :food, :location, :user_id)
   end
 end

@@ -1,23 +1,43 @@
 <h1>Your Dates</h1>
-<table>
-    <% @dates.each do |date| %>
-    <h4>Date: </h4>
-      <tr><%= date.title %></tr>
-    <h4>Activity 1:</h4>
-      <tr><%= date.act1 %></tr>
-    <h4>Food:</h4>
-      <tr><%= date.food %></tr>
-    <h4>Activity 2 </h4>
-      <tr><%= date.act2 %></tr>
-    <h4>Location: </h4>
-      <tr><%= date.location %></tr>
-    <tr>
-    <%= link_to 'Show', date_post_path(date) %>
-    <%= link_to 'Edit', edit_date_post_path(date) %>
-    <%= link_to 'Destroy', date_post_path(date),
-                  method: :delete,
-                  data: { confirm: 'Are you sure?'} %>
-    </tr>
 
-  <% end %>
-</table>
+<!-- Most recent date div -->
+
+<div>
+<ul>
+  <li><%= link_to 'Create', new_date_post_path(@date), :class => "btn btn-default btn-lg" %></li>
+</ul>
+</div>
+<hr>
+<!-- From here down is lower div -->
+    <div class="container">
+      <!-- <div class="row"> -->
+        <% @dates.each do |date| %>
+
+               <div class="custom_card">
+                 <div class="card blue-grey darken-1">
+                   <div class="card-content white-text">
+                     <span class="card-title"><h4><%= date.title %><h4></span>
+                        <p>
+                          <h6>Activity 1:</h6>
+                            <%= date.act1 %>
+                          <h6>Food:</h6>
+                            <%= date.food %>
+                          <h6>Activity 2 </h6>
+                            <%= date.act2 %>
+                          <h6>Location: </h6>
+                            <%= date.location %>
+                        </p>
+                   </div>
+                   <div class="card-action">
+                        <%= link_to 'Show', date_post_path(date) %>
+                        <%= link_to 'Edit', edit_date_post_path(date) %>
+                        <%= link_to 'Destroy', date_post_path(date),
+                                        method: :delete,
+                                        data: { confirm: 'Are you sure?'} %>
+                  </div>
+                </div>
+              </div>
+            <!-- </div>
+          </div> -->
+      <% end %>
+</div>
