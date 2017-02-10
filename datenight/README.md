@@ -1,17 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README 
 
-Things you may want to cover:
+Philip & Chris
 
-* Ruby version
+* Ruby on Rails
 
-* System dependencies
+Auth & Auth
+* Gem Cancancan
+* Gem Devise
 
 * Configuration
 
-* Database creation
+* Database Postgresql
 
 * Database initialization
 
@@ -20,5 +21,7 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+-Rails s
+-Rails c for testing
 
 * ...
