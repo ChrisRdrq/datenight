@@ -16,6 +16,7 @@
 Activity.destroy_all
 Food.destroy_all
 
+Activity.create(name: "")
 Activity.create(name: "Aquarium")
 Activity.create(name: "Art Show")
 Activity.create(name: "Beach")
@@ -41,7 +42,7 @@ Activity.create(name: "Trivia Night")
 Activity.create(name: "Volunteer")
 Activity.create(name: "Zoo")
 
-
+Food.create(name: "")
 Food.create(name: "BBQ")
 Food.create(name: "Brunch at home")
 Food.create(name: "Brunch out")
