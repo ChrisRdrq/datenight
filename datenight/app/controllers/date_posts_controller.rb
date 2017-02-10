@@ -6,6 +6,7 @@ before_filter :authenticate_user!
   def index
     @user = current_user
     @dates = @user.date_posts.all
+    @dates = DatePost.all.limit(4).order("created_at desc")
 	end
 
   # show
@@ -62,6 +63,6 @@ before_filter :authenticate_user!
 
   private
   def date_params
-    params.require(:date_post).permit(:title, :act1, :act2, :food, :location, :user_id)
+    params.require(:date_post).permit(:title, :act1, :act2, :food, :location, :user_id, :food_id, :activity_id, :activity_two_id)
   end
 end
