@@ -40,6 +40,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 # Fixes Turbolinks and Jquery conflicts
 gem 'jquery-turbolinks', '~> 2.1'
+#Displays DB data in a prettier way
+gem 'awesome_print', '~> 1.7'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
