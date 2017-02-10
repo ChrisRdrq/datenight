@@ -14,6 +14,7 @@
 #                           {title: "Beach Date", act1: "Beach", act2: "Jet Ski", food: "Pic-nic", location: "Atlanta", date: "2018-15-03"}])
 
 Activity.destroy_all
+ActivityTwo.destroy_all
 Food.destroy_all
 
 Activity.create(name: "")
@@ -41,6 +42,32 @@ Activity.create(name: "Sports Game")
 Activity.create(name: "Trivia Night")
 Activity.create(name: "Volunteer")
 Activity.create(name: "Zoo")
+
+ActivityTwo.create(name: "")
+ActivityTwo.create(name: "Aquarium")
+ActivityTwo.create(name: "Art Show")
+ActivityTwo.create(name: "Beach")
+ActivityTwo.create(name: "Bike ride")
+ActivityTwo.create(name: "Botanical Gardens")
+ActivityTwo.create(name: "Bowling")
+ActivityTwo.create(name: "Brewery Tour")
+ActivityTwo.create(name: "Convention")
+ActivityTwo.create(name: "Cooking Class")
+ActivityTwo.create(name: "Dancing")
+ActivityTwo.create(name: "Farmers Market")
+ActivityTwo.create(name: "Get Coffee")
+ActivityTwo.create(name: "Go out for drinks")
+ActivityTwo.create(name: "Hike")
+ActivityTwo.create(name: "Lake")
+ActivityTwo.create(name: "Museum")
+ActivityTwo.create(name: "Music Show")
+ActivityTwo.create(name: "Netflix & Chill")
+ActivityTwo.create(name: "Park")
+ActivityTwo.create(name: "Sky Diving")
+ActivityTwo.create(name: "Sports Game")
+ActivityTwo.create(name: "Trivia Night")
+ActivityTwo.create(name: "Volunteer")
+ActivityTwo.create(name: "Zoo")
 
 Food.create(name: "")
 Food.create(name: "BBQ")

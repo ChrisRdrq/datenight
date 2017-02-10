@@ -1,5 +1,6 @@
 class DatePost < ApplicationRecord
   belongs_to :user
-  has_many :activities
-  has_many :foods
+  belongs_to :activity
+  belongs_to :food
+  belongs_to :activity_two
 end

@@ -1,3 +1,3 @@
 class Food < ApplicationRecord
-  belongs_to :date_post
+  has_many :date_posts
 end
