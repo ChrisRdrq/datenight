@@ -2,6 +2,10 @@ class DatePostsController < ApplicationController
 
 before_filter :authenticate_user!
 
+  def last
+    @date = @user.date_posts.last
+  end
+
   # index
   def index
     @user = current_user
