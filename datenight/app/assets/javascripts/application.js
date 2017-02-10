@@ -15,7 +15,7 @@
 //= require jquery_ujs
 //= require materialize
 //= require_tree .
-//= require ap
+//= require:"ap"
 
 $(document).ready(function() {
     $('select').material_select();
