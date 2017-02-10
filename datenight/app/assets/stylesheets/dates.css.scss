@@ -8,18 +8,24 @@
 
 .container{
   width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
+.container-item{
+  display: inline-block;
 }
 
 .heading{
   text-align: center;
 }
 label {
-  font-size: 1.5rem;
+  font-size: 1.7em;
 }
 .formContainer {
   width: 40rem;
-  font-size: 2rem;
+  font-size: 2em;
   margin: 0 auto;
 
 }

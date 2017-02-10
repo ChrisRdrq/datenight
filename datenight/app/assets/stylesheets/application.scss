@@ -1,7 +1,22 @@
+
+h1 {
+  text-align: center;
+  color: red
+}
+p {
+  text-size: 9em;
+  text-align: center;
+}
+
+.field {
+  margin: auto;
+}
+
+
+
+
+
 @import "materialize";
-
-
-
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

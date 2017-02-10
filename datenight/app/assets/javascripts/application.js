@@ -11,7 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
+//= require materialize
 //= require_tree .
-//=require jquery
+//= require:"ap"
+
+$(document).ready(function() {
+    $('select').material_select();
+  });
