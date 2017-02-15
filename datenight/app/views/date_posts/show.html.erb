@@ -1,19 +1,7 @@
-<h1>THE Date</h1>
-<!-- <div class="formContainer">
-<div class="heading">
-  <strong>Title:</strong>
-    <%= @date.title %><br>
-  <strong>Activity 1:</strong>
-    <%= @date.act1 %><br>
-  <strong>Food:</strong>
-    <%= @date.food %><br>
-  <strong>Activity 2:</strong>
-    <%= @date.act2 %><br>
-  <strong>Location:</strong>
-    <%= @date.location %><br>
-</div>
-</div> -->
+<h1>THE DATE</h1>
+
 <div class="formContainer">
+	<div class="back-fill">
 	<%= form_for @date do |f| %>
 
 		<div class="heading">
@@ -40,7 +28,8 @@
 
 
 	<% end %>
-
+	</div>
 
   <%= link_to 'Edit', edit_date_post_path(@date) %>
+	<br>
   <%= link_to 'Go to Dates', date_posts_path(@date) %>

@@ -12,6 +12,41 @@ p {
   margin: auto;
 }
 
+.back-fill {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+}
+
+/* manipulating the devise user forms */
+// h2:first-of-type {  display: none;  }
+// .new_user {
+//     width: 60%;
+//     margin: 10% auto;
+//     padding: 5%;
+//     background: rgba(255, 255, 255, 0.65);
+//     text-align: center;
+//     border-radius: 2%;
+// }
+// .new_user label {  font-size: 2.5rem;  }
+// .new_user input {
+//     width: 50%;
+//     height: 3rem;
+//     margin: 1%;
+//     border: none;
+//     font-size: 2rem;
+//     background: rgba(0, 0, 0, 0.25);
+//     text-align: center;
+// }
+// #user_remember_me {  display: none;  }
+// label[for=user_remember_me] {  display: none;  }
+// input[type=submit] {
+//     height: 4rem;
+//     width: 60%;
+//     background: rgba(255, 255, 255, 0.5);
+//     color: black;
+//     font-size: 2.5rem;
+// }
 
 
 

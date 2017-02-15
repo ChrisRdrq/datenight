@@ -1,36 +1,38 @@
 
 <div class="formContainer">
-	<%= form_for @date do |f| %>
+	<div class="back-fill">
+		<%= form_for @date do |f| %>
 
-		<div class="heading">
-			<%= f.label :Title %><br>
-			<%= f.text_field :title %><br>
-		</div>
-		<div class="heading">
-			<%= f.label :Activity1 %><br>
-			<!-- <%= f.text_field :act1 %><br> -->
-			<%= f.collection_select :activity_id, Activity.all, :id, :name %><br>
-		</div>
+			<div class="heading">
+				<%= f.label :"Title:" %><br>
+				<%= f.text_field :title %><br>
+			</div>
+			<div class="heading">
+				<%= f.label :"Activity 1:" %><br>
+				<!-- <%= f.text_field :act1 %><br> -->
+				<%= f.collection_select :activity_id, Activity.all, :id, :name %><br>
+			</div>
 
-	  <div class="heading">
-	    <%= f.label :Food %><br>
-	    <!-- <%= f.text_field :food %><br> -->
-			<%= f.collection_select :food_id, Food.all, :id, :name %>
-	  </div>
+		  <div class="heading">
+		    <%= f.label :"Food:" %><br>
+		    <!-- <%= f.text_field :food %><br> -->
+				<%= f.collection_select :food_id, Food.all, :id, :name %>
+		  </div>
 
-		<div class="heading">
-			<%= f.label :Activity2 %><br>
-			<!-- <%= f.text_field :act1 %><br> -->
-			<%= f.collection_select :activity_two_id, Activity.all, :id, :name %><br>
-		</div>
+			<div class="heading">
+				<%= f.label :"Activity 2:" %><br>
+				<!-- <%= f.text_field :act1 %><br> -->
+				<%= f.collection_select :activity_two_id, Activity.all, :id, :name %><br>
+			</div>
 
-	  <div class="heading">
-	    <%= f.label :Location %><br>
-	    <%= f.text_field :location %><br>
-	  </div>
+		  <div class="heading">
+		    <%= f.label :"Location:" %><br>
+		    <%= f.text_field :location %><br>
+		  </div>
 
-	  <div class="heading">
-	    <%=f.submit %>
-	  </div>
-	<% end %>
+		  <div class="heading">
+		    <%=f.submit %>
+		  </div>
+		<% end %>
+	</div>
 </div>
