@@ -12,41 +12,41 @@
 
 <div class="back-fill">
 <!-- From here down is lower div -->
-    <div class="container">
-      <!-- <div class="row"> -->
-      <% if @dates.length > 0 %>
-          <% @dates.each do |date| %>
-                 <div class="custom_card">
-                   <div class="card blue-grey darken-1">
-                     <div class="card-content white-text">
-                       <span class="card-title">
-                         <h4>
-                           <%= date.title %>
-                         </h4>
-                       </span>
-                       <p>
-                         <h6>Activity 1:</h6>
-                           <%= date.activity.name %>
-                         <h6>Food:</h6>
-                           <%= date.food.name %>
-                         <h6>Activity 2 </h6>
-                           <%= date.activity_two.name %>
-                         <h6>Location: </h6>
-                           <%= date.location %>
-                       </p>
-                       </div>
-                         <div class="card-action">
-                              <%= link_to 'Show', date_post_path(date) %>
-                              <%= link_to 'Edit', edit_date_post_path(date) %>
-                              <%= link_to 'Destroy', date_post_path(date),
-                                              method: :delete,
-                                              data: { confirm: 'Are you sure?'} %>
-                        </div>
-                      </div>
-                    </div>
-        <% end %>
-      <% else %>
-        <h1>Create a New Date!</h1>
+  <div class="container">
+    <!-- <div class="row"> -->
+    <% if @dates.length > 0 %>
+      <% @dates.each do |date| %>
+        <div class="custom_card">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">
+                <h4>
+                  <%= date.title %>
+                </h4>
+              </span>
+              <p>
+                <h6>Activity 1:</h6>
+                <%= date.activity.name %>
+                <h6>Food:</h6>
+                <%= date.food.name %>
+                <h6>Activity 2 </h6>
+                <%= date.activity_two.name %>
+                <h6>Location: </h6>
+                <%= date.location %>
+              </p>
+            </div>
+            <div class="card-action">
+              <%= link_to 'Show', date_post_path(date) %>
+              <%= link_to 'Edit', edit_date_post_path(date) %>
+              <%= link_to 'Destroy', date_post_path(date),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?'} %>
+            </div>
+          </div>
+        </div>
       <% end %>
-</div>
+    <% else %>
+      <h1>Create a New Date!</h1>
+    <% end %>
+  </div>
 </div>
